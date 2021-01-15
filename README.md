@@ -1,2 +1,2 @@
-# MMaringGH.github.io
-MMaringGH.github.io
+# main
+MysticalWizard.github.io
