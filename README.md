@@ -1,5 +1,5 @@
 # main
-(https://mysticalwizard.github.io)
+https://mysticalwizard.github.io
 
 # MysticalWizard
 
