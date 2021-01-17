@@ -42,6 +42,10 @@ yarn-error.log
 testem.log
 /typings
 
+# Styles
+#*.css
+#*.less
+
 # System Files
 .DS_Store
 .DS_Store?
