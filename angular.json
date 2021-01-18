@@ -3,14 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mystical-wizard": {
+    "mysticalwizard": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "less"
-        },
-        "@schematics/angular:application": {
-          "strict": true
         }
       },
       "root": "",
@@ -20,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mystical-wizard",
+            "outputPath": "dist/mysticalwizard",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -47,6 +44,7 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
+              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -54,13 +52,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
                 }
               ]
             }
@@ -69,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mystical-wizard:build"
+            "browserTarget": "mysticalwizard:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mystical-wizard:build:production"
+              "browserTarget": "mysticalwizard:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mystical-wizard:build"
+            "browserTarget": "mysticalwizard:build"
           }
         },
         "test": {
@@ -117,19 +115,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "mystical-wizard:serve"
+            "devServerTarget": "mysticalwizard:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "mystical-wizard:serve:production"
+              "devServerTarget": "mysticalwizard:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "mystical-wizard",
+  "defaultProject": "mysticalwizard",
   "cli": {
-    "analytics": "fcdf9bcf-5b3a-478e-9fbf-0598724f73a2"
+    "analytics": "85e1b53c-4178-4c61-ae1d-d508ec91c8ef"
   }
 }
