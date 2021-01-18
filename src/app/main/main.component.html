@@ -1,13 +1,44 @@
 <td-layout>
     <mat-sidenav-container fullscreen>
-        <mat-sidenav class="td-layout-sidenav" style="max-width: 320px; min-width: 320px; box-shadow: none; visibility: hidden;"></mat-sidenav>
-        <mat-sidenav-content cdkscrollable class="ng-star-inserted">
-
-            <td-layout-nav></td-layout-nav>
-            Main
+        <mat-sidenav class="td-layout-sidenav" style="max-width: 320px; min-width: 320px; box-shadow: none; visibility: hidden;">
+            <div></div>
+        </mat-sidenav>
+        <mat-sidenav-content cdkscrollable class="mat-drawer-content mat-sidenav-content">
+            <td-layout-nav color="white" class="layout">
+                <mat-toolbar class="mat-toolbar mat-white mat-toolbar-single-row">
+                    <span class="title"><b>MysticalWizard</b></span>
+                    <span flex=""></span>
+                    <button mat-button="" routerlink="/" class="mat-focus-indicator mat-button mat-button-base" tabindex="0">
+                        <span class="mat-button-wrapper">Home</span>
+                        <div matripple="" class="mat-ripple mat-button-ripple"></div>
+                        <div class="mat-button-focus-overlay"></div>
+                    </button>
+                    <button mat-button="" routerlink="/about" class="mat-focus-indicator mat-button mat-button-base" tabindex="0">
+                        <span class="mat-button-wrapper">About</span>
+                        <div matripple="" class="mat-ripple mat-button-ripple"></div>
+                        <div class="mat-button-focus-overlay"></div>
+                    </button>
+                    <button mat-button="" routerlink="/social" class="mat-focus-indicator mat-button mat-button-base" tabindex="0">
+                        <span class="mat-button-wrapper">Social</span>
+                        <div matripple="" class="mat-ripple mat-button-ripple"></div>
+                        <div class="mat-button-focus-overlay"></div>
+                    </button>
+                    <button mat-button="" routerlink="/projects" class="mat-focus-indicator mat-button mat-button-base" tabindex="0">
+                        <span class="mat-button-wrapper">Projects</span>
+                        <div matripple="" class="mat-ripple mat-button-ripple"></div>
+                        <div class="mat-button-focus-overlay"></div>
+                    </button>
+                </mat-toolbar>
+                <div cdkscrollable class="td-layout-nav-content">
+                    <div tdmediatoggle="gt-sm" style="flex-grow: 1;" class="push-xxl">
+                        <div class="effects">
+                            <div class="effect-selector">
+                                (content here)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td-layout-nav>
         </mat-sidenav-content>
     </mat-sidenav-container>
-
-    <p>main works!</p>
 </td-layout>
-
