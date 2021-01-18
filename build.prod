@@ -1,3 +1,3 @@
 ng serve
 ng build --prod --base-href https://mysticalwizard.github.io/
-angular-cli-ghpages -d dist/mystical-wizard/ --no-silent
+angular-cli-ghpages -d dist/mysticalwizard/ --no-silent
