@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
+import { HomeComponent } from './main/home/home.component';
 
 //Angular Material Components
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -51,7 +52,6 @@ import { CovalentHighlightModule } from '@covalent/highlight';
 import { CovalentMarkdownModule } from '@covalent/markdown';
 import { CovalentDynamicFormsModule } from '@covalent/dynamic-forms';
 import { CovalentBaseEchartsModule } from '@covalent/echarts/base';
-import { HomeComponent } from './main/home/home.component';
 
 
 @NgModule({
