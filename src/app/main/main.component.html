@@ -1,48 +1,34 @@
 <td-layout>
-    <mat-sidenav-container fullscreen>
-        <mat-sidenav class="td-layout-sidenav" style="max-width: 320px; min-width: 320px; box-shadow: none; visibility: hidden;">
-            <div></div>
-        </mat-sidenav>
-        <mat-sidenav-content cdkscrollable class="mat-drawer-content">
-            <td-layout-nav color="white" class="layout">
-                <div class="td-layout-nav-wrapper">
-                    <mat-toolbar>
-                        <div td-toolbar-content layout="row" layout-align="end center" flex class="toolbar">
-                            <span class="title"><b>mysticalwizard.github.io</b></span>
-                            <span flex=""></span>
-                            <button mat-button="" routerlink="/" class="mat-focus-indicator mat-button mat-button-base" tabindex="0">
-                                <span class="mat-button-wrapper">Home</span>
-                                <div matripple="" class="mat-ripple mat-button-ripple"></div>
-                                <div class="mat-button-focus-overlay"></div>
-                            </button>
-                            <button mat-button="" routerlink="/about" class="mat-focus-indicator mat-button mat-button-base" tabindex="0">
-                                <span class="mat-button-wrapper">About</span>
-                                <div matripple="" class="mat-ripple mat-button-ripple"></div>
-                                <div class="mat-button-focus-overlay"></div>
-                            </button>
-                            <button mat-button="" routerlink="/social" class="mat-focus-indicator mat-button mat-button-base" tabindex="0">
-                                <span class="mat-button-wrapper">Social</span>
-                                <div matripple="" class="mat-ripple mat-button-ripple"></div>
-                                <div class="mat-button-focus-overlay"></div>
-                            </button>
-                            <button mat-button="" routerlink="/projects" class="mat-focus-indicator mat-button mat-button-base" tabindex="0">
-                                <span class="mat-button-wrapper">Projects</span>
-                                <div matripple="" class="mat-ripple mat-button-ripple"></div>
-                                <div class="mat-button-focus-overlay"></div>
-                            </button>
-                        </div>
-                    </mat-toolbar>
-                    <div cdkscrollable class="td-layout-nav-content">
-                        <div tdmediatoggle="gt-sm" style="flex-grow: 1;" class="push-xxl">
-                            <div class="effects">
-                                <div class="effect-selector">
-                                    (content here)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td-layout-nav>
-        </mat-sidenav-content>
-    </mat-sidenav-container>
+    <td-layout-nav color="white" class="layout">
+        <div td-toolbar-content layout="row" layout-align="end center" flex class="toolbar">
+            <span class="title"><b>Mystical</b>Wizard</span>
+            <span flex></span>
+            <button mat-button routerlink="/">
+                <span>Home</span>
+                <span matripple></span>
+                <span></span>
+            </button>
+            <button mat-button routerlink="/about">
+                <span>About</span>
+                <span matripple></span>
+                <span></span>
+            </button>
+            <button mat-button routerlink="/social">
+                <span>Social</span>
+                <span matripple></span>
+                <span></span>
+            </button>
+            <button mat-button routerlink="/projects">
+                <span>Projects</span>
+                <span matripple></span>
+                <span></span>
+            </button>
+        </div>
+        <div>
+            <div class="effects">
+                <div class="particle"></div>
+            </div>
+            <router-outlet></router-outlet>
+        </div>
+    </td-layout-nav>
 </td-layout>
