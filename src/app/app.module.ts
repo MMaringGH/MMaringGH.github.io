@@ -6,6 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { HomeComponent } from './main/home/home.component';
+import { AboutComponent } from './main/about/about.component';
+import { SocialComponent } from './main/social/social.component';
+import { ProjectsComponent } from './main/projects/projects.component';
 
 //Angular Material Components
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -58,7 +61,10 @@ import { CovalentBaseEchartsModule } from '@covalent/echarts/base';
   declarations: [
     AppComponent,
     MainComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    SocialComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
