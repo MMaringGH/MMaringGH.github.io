@@ -3,25 +3,25 @@
         <div td-toolbar-content layout="row" layout-align="end center" flex class="toolbar">
             <span class="title"><b>Mystical</b>Wizard</span>
             <span flex></span>
-            <button mat-button routerlink="/">
+            <button mat-button routerLink="home">
                 <span>Home</span>
-                <span matripple></span>
-                <span></span>
+                <div matripple></div>
+                <div></div>
             </button>
-            <button mat-button routerlink="/about">
+            <button mat-button routerLink="about">
                 <span>About</span>
-                <span matripple></span>
-                <span></span>
+                <div matripple></div>
+                <div></div>
             </button>
-            <button mat-button routerlink="/social">
+            <button mat-button routerLink="social">
                 <span>Social</span>
-                <span matripple></span>
-                <span></span>
+                <div matripple></div>
+                <div></div>
             </button>
-            <button mat-button routerlink="/projects">
+            <button mat-button routerLink="projects">
                 <span>Projects</span>
-                <span matripple></span>
-                <span></span>
+                <div matripple></div>
+                <div></div>
             </button>
         </div>
         <div>
@@ -29,7 +29,6 @@
                 <div class="particle"></div>
             </div>
             <router-outlet></router-outlet>
-            <mysticalwizard-home></mysticalwizard-home>
         </div>
     </td-layout-nav>
 </td-layout>
