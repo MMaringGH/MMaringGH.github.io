@@ -5,10 +5,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
-import { HomeComponent } from './main/home/home.component';
-import { AboutComponent } from './main/about/about.component';
-import { SocialComponent } from './main/social/social.component';
-import { ProjectsComponent } from './main/projects/projects.component';
+import { HomeComponent } from './main/home.component';
+import { AboutComponent } from './main/about.component';
+import { SocialComponent } from './main/social.component';
+import { ProjectsComponent } from './main/projects.component';
 
 //Angular Material Components
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
