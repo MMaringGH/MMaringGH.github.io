@@ -42,9 +42,12 @@ yarn-error.log
 testem.log
 /typings
 
+#Source Code
+/src
+
 # Styles
-#*.css
-#*.less
+*.css
+*.less
 
 # System Files
 .DS_Store
