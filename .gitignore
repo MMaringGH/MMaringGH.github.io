@@ -43,7 +43,7 @@ testem.log
 /typings
 
 #Source Code
-/src
+/src/app
 
 # Styles
 *.css
