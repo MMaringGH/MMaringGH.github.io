@@ -44,6 +44,7 @@ testem.log
 
 #Source Code
 /src/app
+/src/assets
 
 # Styles
 *.css
