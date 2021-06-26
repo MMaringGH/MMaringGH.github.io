@@ -11,7 +11,7 @@ import { AboutComponent } from './main/about.component';
 import { SocialComponent } from './main/social.component';
 import { ProjectsComponent } from './main/projects.component';
 
-//Angular Material Components
+// Angular Material Components
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatBadgeModule} from '@angular/material/badge';
@@ -48,7 +48,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 
-//TD Covalent Components
+// TD Covalent Components
 import { CovalentLayoutModule } from '@covalent/core/layout';
 import { CovalentStepsModule  } from '@covalent/core/steps';
 import { CovalentHttpModule } from '@covalent/http';
