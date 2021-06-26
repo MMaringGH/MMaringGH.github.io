@@ -1,4 +1,7 @@
 ng serve
 
 ng build --prod --base-href https://mysticalwizard.github.io/
+ng test
+ng lint
+ng e2e
 angular-cli-ghpages -d dist/mysticalwizard/ --no-silent
