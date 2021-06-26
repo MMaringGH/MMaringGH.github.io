@@ -1,0 +1,36 @@
+<td-layout>
+    <td-layout-nav color="white" class="layout background">
+        <div td-toolbar-content layout="row" layout-align="end center" flex class="toolbar">
+            <span class="title" matTooltip="Under Development! (version: dev-beta-0.6)" matTooltipPosition="right">
+                <b>Mystical</b>Wizard
+            </span>
+            <span flex></span>
+            <button mat-button routerLink="/">
+                <span>Home</span>
+                <div matripple></div>
+                <div></div>
+            </button>
+            <button mat-button routerLink="/about">
+                <span>About</span>
+                <div matripple></div>
+                <div></div>
+            </button>
+            <button mat-button routerLink="/social">
+                <span>Social</span>
+                <div matripple></div>
+                <div></div>
+            </button>
+            <button mat-button routerLink="/projects">
+                <span>Projects</span>
+                <div matripple></div>
+                <div></div>
+            </button>
+        </div>
+        <div>
+            <!-- <div class="effects">
+                <div class="particle"></div>
+            </div> -->
+            <router-outlet></router-outlet>
+        </div>
+    </td-layout-nav>
+</td-layout>

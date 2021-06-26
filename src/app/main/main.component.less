@@ -1,0 +1,118 @@
+@charset "UTF-8";
+.mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button {
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 2px;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+    height: 64px;
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 16px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap
+}
+.background {
+    background-color: #000;
+}
+.layout {
+    background: url(/assets/images/bg.jpg) no-repeat fixed 50%;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.layout:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+}
+.layout div{
+    z-index: 0;
+}
+.navlogo {
+    fill: rgb(255, 255, 255)
+}
+.title {
+    font-weight: 200;
+    color: hsla(0, 0%, 100%, 0.6);
+    cursor: default;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+.title b {
+    font-weight: 400;
+    color: #fff;
+}
+.middle {
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.middle mat-card {
+    width: 100%;
+    max-width: 600px;
+}
+.snow-flakes {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.snow-flake {
+    position: absolute;
+    color: #ffbd49;
+    opacity: 1;
+    z-index: 1;
+}
+.snow-flake:after {
+    content: "⬤";
+}
+.snow-flake:first-of-type {
+    -webkit-animation-name: snowflake-1;
+    animation-name: snowflake-1;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 18s;
+    animation-duration: 18s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    left: -98%;
+    top: 69%;
+}
+.snow-flake:first-of-type:after {
+    font-size: 6px;
+}
